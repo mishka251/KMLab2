@@ -27,8 +27,8 @@ namespace KMLab2
         Func f = funcs[0];
         private void button1_Click(object sender, EventArgs e)
         {
-            double a = (double)numUDa.Value;
-            double b = (double)numUDb.Value;
+            double a = double.Parse(tbA.Text);
+            double b = double.Parse(tbB.Text); 
             int n = int.Parse(tbN.Text);
 
             IntegralFunction int_f = new IntegralFunction(f, a, b);
@@ -37,7 +37,7 @@ namespace KMLab2
             var result = c.CalculateAll(int_f, n);
 
             DataTable dt = new DataTable();
-            dt.Columns.Add("ul");
+            dt.Columns.Add("u");
             dt.Columns.Add("x");
             dt.Columns.Add("y");
 

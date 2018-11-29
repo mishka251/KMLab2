@@ -32,8 +32,6 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.numUDa = new System.Windows.Forms.NumericUpDown();
-            this.numUDb = new System.Windows.Forms.NumericUpDown();
             this.lblRes = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbN = new System.Windows.Forms.TextBox();
@@ -47,8 +45,8 @@
             this.tbTochn = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDb)).BeginInit();
+            this.tbA = new System.Windows.Forms.TextBox();
+            this.tbB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,40 +77,6 @@
             this.label2.Size = new System.Drawing.Size(19, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "a=";
-            // 
-            // numUDa
-            // 
-            this.numUDa.Location = new System.Drawing.Point(60, 129);
-            this.numUDa.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.numUDa.Name = "numUDa";
-            this.numUDa.Size = new System.Drawing.Size(67, 20);
-            this.numUDa.TabIndex = 3;
-            this.numUDa.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numUDb
-            // 
-            this.numUDb.Location = new System.Drawing.Point(52, 3);
-            this.numUDb.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numUDb.Name = "numUDb";
-            this.numUDb.Size = new System.Drawing.Size(67, 20);
-            this.numUDb.TabIndex = 4;
-            this.numUDb.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // lblRes
             // 
@@ -233,11 +197,27 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "dx";
             // 
+            // tbA
+            // 
+            this.tbA.Location = new System.Drawing.Point(53, 126);
+            this.tbA.Name = "tbA";
+            this.tbA.Size = new System.Drawing.Size(60, 20);
+            this.tbA.TabIndex = 20;
+            // 
+            // tbB
+            // 
+            this.tbB.Location = new System.Drawing.Point(54, 2);
+            this.tbB.Name = "tbB";
+            this.tbB.Size = new System.Drawing.Size(53, 20);
+            this.tbB.TabIndex = 21;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 338);
+            this.Controls.Add(this.tbB);
+            this.Controls.Add(this.tbA);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbTochn);
@@ -251,16 +231,12 @@
             this.Controls.Add(this.tbN);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblRes);
-            this.Controls.Add(this.numUDb);
-            this.Controls.Add(this.numUDa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStart);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Вычисление определного интеграла методом Монте-Карло";
-            ((System.ComponentModel.ISupportInitialize)(this.numUDa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,8 +248,6 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numUDa;
-        private System.Windows.Forms.NumericUpDown numUDb;
         private System.Windows.Forms.Label lblRes;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox tbN;
@@ -287,6 +261,8 @@
         private System.Windows.Forms.TextBox tbTochn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbA;
+        private System.Windows.Forms.TextBox tbB;
     }
 }
 
