@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.numUDa = new System.Windows.Forms.NumericUpDown();
             this.numUDb = new System.Windows.Forms.NumericUpDown();
-            this.cbBIsInf = new System.Windows.Forms.CheckBox();
             this.lblRes = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbN = new System.Windows.Forms.TextBox();
@@ -114,19 +113,6 @@
             0,
             0,
             0});
-            // 
-            // cbBIsInf
-            // 
-            this.cbBIsInf.AutoSize = true;
-            this.cbBIsInf.Font = new System.Drawing.Font("Microsoft PhagsPa", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cbBIsInf.Location = new System.Drawing.Point(136, 0);
-            this.cbBIsInf.Name = "cbBIsInf";
-            this.cbBIsInf.Size = new System.Drawing.Size(54, 26);
-            this.cbBIsInf.TabIndex = 5;
-            this.cbBIsInf.Text = "+∞";
-            this.cbBIsInf.UseVisualStyleBackColor = true;
-            this.cbBIsInf.Visible = false;
-            this.cbBIsInf.CheckedChanged += new System.EventHandler(this.cbBIsInf_CheckedChanged);
             // 
             // lblRes
             // 
@@ -265,7 +251,6 @@
             this.Controls.Add(this.tbN);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblRes);
-            this.Controls.Add(this.cbBIsInf);
             this.Controls.Add(this.numUDb);
             this.Controls.Add(this.numUDa);
             this.Controls.Add(this.label2);
@@ -289,7 +274,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numUDa;
         private System.Windows.Forms.NumericUpDown numUDb;
-        private System.Windows.Forms.CheckBox cbBIsInf;
         private System.Windows.Forms.Label lblRes;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox tbN;

@@ -28,7 +28,7 @@ namespace KMLab2
         private void button1_Click(object sender, EventArgs e)
         {
             double a = (double)numUDa.Value;
-            double b = cbBIsInf.Checked ? double.PositiveInfinity : (double)numUDb.Value;
+            double b = (double)numUDb.Value;
             int n = int.Parse(tbN.Text);
 
             IntegralFunction int_f = new IntegralFunction(f, a, b);
@@ -55,11 +55,6 @@ namespace KMLab2
                 lblSrRes.Text = c.err(result.I, tochn).ToString();
             }
 
-        }
-
-        private void cbBIsInf_CheckedChanged(object sender, EventArgs e)
-        {
-            numUDb.Enabled = !cbBIsInf.Checked;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
