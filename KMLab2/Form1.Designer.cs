@@ -47,6 +47,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tbA = new System.Windows.Forms.TextBox();
             this.tbB = new System.Windows.Forms.TextBox();
+            this.lblResTochnInterval = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 131);
+            this.label2.Location = new System.Drawing.Point(13, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 13);
             this.label2.TabIndex = 2;
@@ -81,7 +82,7 @@
             // lblRes
             // 
             this.lblRes.AutoSize = true;
-            this.lblRes.Location = new System.Drawing.Point(206, 80);
+            this.lblRes.Location = new System.Drawing.Point(206, 65);
             this.lblRes.Name = "lblRes";
             this.lblRes.Size = new System.Drawing.Size(0, 13);
             this.lblRes.TabIndex = 6;
@@ -91,21 +92,21 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(149, 233);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(413, 93);
+            this.dataGridView1.Size = new System.Drawing.Size(440, 93);
             this.dataGridView1.TabIndex = 8;
             // 
             // tbN
             // 
-            this.tbN.Location = new System.Drawing.Point(329, 27);
+            this.tbN.Location = new System.Drawing.Point(499, 12);
             this.tbN.Name = "tbN";
             this.tbN.Size = new System.Drawing.Size(149, 20);
             this.tbN.TabIndex = 9;
-            this.tbN.Text = "10";
+            this.tbN.Text = "1000";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(284, 32);
+            this.label3.Location = new System.Drawing.Point(454, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(19, 13);
             this.label3.TabIndex = 10;
@@ -114,7 +115,7 @@
             // lblOz
             // 
             this.lblOz.AutoSize = true;
-            this.lblOz.Location = new System.Drawing.Point(219, 136);
+            this.lblOz.Location = new System.Drawing.Point(190, 133);
             this.lblOz.Name = "lblOz";
             this.lblOz.Size = new System.Drawing.Size(0, 13);
             this.lblOz.TabIndex = 11;
@@ -122,12 +123,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(60, 28);
+            this.radioButton1.Location = new System.Drawing.Point(60, 33);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(42, 17);
             this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "1+x";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -135,10 +134,12 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(60, 61);
+            this.radioButton2.Checked = true;
+            this.radioButton2.Location = new System.Drawing.Point(60, 58);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(54, 17);
             this.radioButton2.TabIndex = 13;
+            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "e^e^x";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
@@ -146,7 +147,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(60, 93);
+            this.radioButton3.Location = new System.Drawing.Point(60, 86);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(59, 17);
             this.radioButton3.TabIndex = 14;
@@ -157,7 +158,7 @@
             // lblSrRes
             // 
             this.lblSrRes.AutoSize = true;
-            this.lblSrRes.Location = new System.Drawing.Point(438, 177);
+            this.lblSrRes.Location = new System.Drawing.Point(379, 159);
             this.lblSrRes.Name = "lblSrRes";
             this.lblSrRes.Size = new System.Drawing.Size(0, 13);
             this.lblSrRes.TabIndex = 15;
@@ -167,9 +168,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(180, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 13);
+            this.label4.Size = new System.Drawing.Size(127, 13);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Точное значение для проверки";
+            this.label4.Text = "Значение для проверки";
             // 
             // tbTochn
             // 
@@ -177,12 +178,13 @@
             this.tbTochn.Name = "tbTochn";
             this.tbTochn.Size = new System.Drawing.Size(100, 20);
             this.tbTochn.TabIndex = 17;
+            this.tbTochn.Text = "255,676";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(4, 37);
+            this.label5.Location = new System.Drawing.Point(2, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 73);
             this.label5.TabIndex = 18;
@@ -199,10 +201,11 @@
             // 
             // tbA
             // 
-            this.tbA.Location = new System.Drawing.Point(53, 126);
+            this.tbA.Location = new System.Drawing.Point(54, 109);
             this.tbA.Name = "tbA";
             this.tbA.Size = new System.Drawing.Size(60, 20);
             this.tbA.TabIndex = 20;
+            this.tbA.Text = "1";
             // 
             // tbB
             // 
@@ -210,12 +213,22 @@
             this.tbB.Name = "tbB";
             this.tbB.Size = new System.Drawing.Size(53, 20);
             this.tbB.TabIndex = 21;
+            this.tbB.Text = "2";
+            // 
+            // lblResTochnInterval
+            // 
+            this.lblResTochnInterval.AutoSize = true;
+            this.lblResTochnInterval.Location = new System.Drawing.Point(381, 195);
+            this.lblResTochnInterval.Name = "lblResTochnInterval";
+            this.lblResTochnInterval.Size = new System.Drawing.Size(0, 13);
+            this.lblResTochnInterval.TabIndex = 22;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 338);
+            this.ClientSize = new System.Drawing.Size(671, 338);
+            this.Controls.Add(this.lblResTochnInterval);
             this.Controls.Add(this.tbB);
             this.Controls.Add(this.tbA);
             this.Controls.Add(this.label6);
@@ -263,6 +276,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbA;
         private System.Windows.Forms.TextBox tbB;
+        private System.Windows.Forms.Label lblResTochnInterval;
     }
 }
 
